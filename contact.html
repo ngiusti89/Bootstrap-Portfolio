@@ -3,37 +3,58 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Natasha's Contact</title>
+    <title>Contact | Natasha</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="main.js"></script>
 </head>
 <body>
-        <header><h1 class="header">Natasha</h1></header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <ul>
-                <li><a href="index.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    <section><h1>Contact</h1>
-    <p>Name</p>
-    <form action="/action_page.php">
-        <input type="text" name="Name" value="John Smith">
-        </form>
-    <p>Email</p>
-    <form action="/action_page.php">
-        <input type="text" name="Email" value="Email"><br>
-        <input type="submit" value="Submit">
-        </form>
-        <p>Message</p>
-        <form action="/action_page.php">
-            <textarea name="message" rows="10" cols="50"></textarea>
+    <header id="masthead">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="index.html" id="logo">Natasha</a>
+                <a class="navbar-brand" href="index.html">About</a>
+                <a class="navbar-brand" href="portfolio.html">Portfolio</a>
+                <a class="navbar-brand" href="contact.html">Contact</a>
+              </nav>
+        </div>
+      </header>
+    
+      <div id="main-container" class="container">
+        <section class="main-section">
+          <h1>Contact</h1>
+    
+          <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Name</span>
+              </div>
+              <input type="text" class="form-control" placeholder="John Smith" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="johnSmith" aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <span class="input-group-text" id="basic-addon2">@gmail.com</span>
+              </div>
+            </div>
+
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Message</span>
+              </div>
+              <textarea class="form-control" aria-label="With textarea"></textarea>
+            </div>
             <br>
-            <input type="submit">
-          </form>
-    </section>
+            <input class="btn btn-primary" type="submit" value="Submit">
+
+        </section>
+    
+      </div>
+    
+      <footer>
+        <div class="container">
+          Copyright &copy; 
+        </div>
+      </footer> 
 </body>
 </html>
-
