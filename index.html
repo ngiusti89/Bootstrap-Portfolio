@@ -1,39 +1,101 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>About | Natasha</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="main.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About | Natasha Giusti</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/styles.css" media="screen">
 </head>
+
 <body>
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="index.html" id="logo">Natasha</a>
-            <a class="navbar-brand" href="index.html">About</a>
-            <a class="navbar-brand" href="portfolio.html">Portfolio</a>
-            <a class="navbar-brand" href="contact.html">Contact</a>
-          </nav>
-
-          <h1>About Me</h1>
-
-          <div class="row">
-              <div class="col-sm-4">
-          <img src="assets/images/Natasha-profile-photo.jpg" class="img-fluid rounded float-left" alt="Natasha">
-        </div>
-        <div class="col-sm-8">
-          <p>Hi! My name's Natasha. I'm 29, born in Vermont, raised in Connecticut, and resident of California for ten years now. In school I studied mostly sociology, but somehow fell into a 'tech' job. I started doing content entry and management, which was mostly copy & paste for days on end. Eventually that led to some HTML work, which lead to me teaching myself more about that and then CSS, and now here I am.</p>
-          
-          <p>What's funniest to me is how impressed others are that I am studying this. It sounds impressive, but when you break it down, it is just the basics of a new language. Technically, anyone can do it. Just takes a whole lot of patience.</p>
-        </div>
-        
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html" id="logo">Natasha Giusti</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="" data-toggle="modal" data-target="#myModal">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">About</a>
+          </li>
+        </ul>
       </div>
-    
-      <footer>
-        <div class="container">
-          Copyright &copy; 
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="row">
+      <div class="col-md-8">
+        <article class="block-main">
+          <h1 class="block-header">About Me</h1>
+          <hr />
+          <img src="./assets/images/Natasha-profile-photo.jpg" class="img-responsive rounded float-left" alt="Natasha"
+            id="profile-image">
+          <p>Hi! My name's Natasha. I'm 29, born in Vermont, raised in Connecticut, and resident of California for ten
+            years
+            now. In school I studied mostly sociology, but somehow fell into a 'tech' job. I started doing content entry
+            and
+            management, which was mostly copy & paste for days on end. Eventually that led to some HTML work, which lead
+            to
+            me teaching myself more about that and then CSS, and now here I am.</p>
+
+          <p>What's funniest to me is how impressed others are that I am studying this. It sounds impressive, but when
+            you
+            break it down, it is just the basics of a new language. Technically, anyone can do it. Just takes a whole
+            lot of
+            patience.</p>
+        </article>
+      </div>
+    </section>
+
+
+  </main>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+  
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+  
+            <h4 class="modal-title">Contact Natasha</h4>
+          </div>
+          <div class="modal-body">
+            <h5><a href="mailto:ngiusti89@gmail.com" class="contact">Email</a><br> <a href="tel:2035619134"
+                class="contact">Call</a></h5>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
         </div>
-      </footer>
+  
+      </div>
+    </div>
+
+
+  <footer class="footer">
+    <div class="two-toned-footer-color"></div>
+    <p class="text-muted text-muted-footer text-center">
+      &copy; 2019 Natasha Giusti
+    </p>
+  </footer>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
 </body>
+
 </html>
